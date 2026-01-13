@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: rgb(218, 215, 204);
+}
+header{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+header h3{
+    color: rgb(100, 3, 3);
+}
+header .get{
+    font-size: 45px;
+    margin-top: 15px;
+    color: rgb(100, 3, 3);
+}
+header .getsec{
+    color: rgb(100, 3, 3);
+margin-top: 5px;
+}
+aside{
+    background-color: white;
+    height: 50vh;
+    padding: 20px;
+    flex-basis: 300px;
+}
+main{
+    padding: 20px;
+    background-color: white;
+    flex-basis: 300px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+aside h2 , main h2{
+    color: rgb(100, 3, 3);
+}
+.info{
+    margin-top: 20px;
+}
+.info p{
+    display: inline;
+    width: 50%;
+}
+i{
+    color: rgb(100, 3, 3);
+    margin-right: 15px;
+}
+input,textarea{
+    border: solid 2px gray;
+    padding: 5px 45px 5px 5px;
+    border-radius: 2px;
+}
+input::placeholder{
+    font-size: 15px;
+    font-family: serif;
+}
+button{
+    background-color: rgb(100, 3, 3);
+    border: solid 10px rgb(100, 3, 3);
+    color: #c7b67d;
+    font-family: serif;
+    padding: 2px 50px;
+    cursor: pointer;
+}
+.con{
+    margin: 20px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+footer{
+    margin-top:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+}
+footer p{
+    background-color: rgb(100, 3, 3);
+        width: 40%;
+        color: #c7b67d;
+        text-align: center;
+        border-radius: 10px;
+}
+footer p:hover{
+    span{
+        color: black;    
+        /* transition: all 2s; */
+        animation: move 4s infinite;
+    }
+}
+@keyframes move{
+    0%{
+        color: #c7b67d;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: #c7b67d;
+    }
+}
+/* back */
+
+.back {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    box-sizing: content-box;
+    border: 3px solid;
+}
+
+.back:hover {
+    background-color: white;
+    border: solid 3px maroon;
+    color: maroon;
+    transition: 1s;
+}
