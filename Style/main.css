@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#66031b;
+    --secondary:#f5f5dc;
+    --additon:#d4af37;
+    --white:white;
+    --black:black;
+}
+body{
+    background-color: var(--white);
+    font-family: sans-serif;
+}
+.nav1{
+    width: 100%;
+    font-size: 1.56rem;
+    top:0;
+    z-index: 2;
+    position: fixed;
+    background-color: var(--primary);
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3.125rem;
+    animation: every 1s ;
+z-index: 6;
+}
+/* second nav */
+section .sidenav {
+    position: fixed;
+    /* background-color: #66031b; */
+    transition: all 2s;
+    transform: translateX(200%);
+    overflow: hidden;
+    z-index: 999;
+}
+
+section .sidenav ul {
+    padding: 25px;
+    list-style: none;
+    display: flex;
+    height: 100vh;
+    width: 50vw;
+    flex-direction: column;
+    /* background-color: #cecebc71; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    backdrop-filter: blur(10px);
+
+}
+
+section .sidenav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 15px;
+    border-radius: 90px;
+}
+section .sidenav.active {
+    transform: translateX(100%);
+    /* transition: all 1.5s ease-in; */
+}
+/* end of the second nav */
+.list{
+    position: absolute;
+    top:0.4em;
+    left: 12em;
+    display: none;
+    align-items: center;
+        font-size: 20px;
+        color: white;
+        background-color: var(--primary);
+        padding: 5px 20px;
+        border-radius: 7px;
+        text-align: center;
+        box-sizing: content-box;
+        margin-left: 50px;
+        border: solid 2px var(--primary);
+}
+.icons i {
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    background-color: var(--primary);
+    padding: 5px 20px;
+    border-radius: 7px;
+    text-align: center;
+    box-sizing: content-box;
+    margin-left: 50px;
+    border: solid 2px var(--primary);
+
+}
+@media(max-width:945px)
+{
+.links{
+    display: none;
+}
+.list{
+    display: inline;
+}
+@media(max-width:650px){
+.icons{
+      display: none;
+    }
+    #ne{
+        display: none;
+    }
+}
+}
+.icons .fa-whatsapp:hover {
+transition-duration: 1s;
+    color: green;
+    border: solid 2px #a80830;
+    border-radius: 90px;
+    background-color: #990b2f;
+}
+.icons .fa-instagram:hover {
+transition-duration: 1s;
+    color: rgb(199, 54, 78);
+    border: solid 2px #a80830;
+    border-radius: 90px;
+    background-color: #990b2f;
+}
+@keyframes every{
+    25%{
+        transform: translateY(-20px);
+    }
+}
+.nav1 h2{
+color: var(--secondary);
+margin-left: 4.25rem;
+font-size: 26px;
+}
+.nav1 h2:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+    color: var(--additon);
+}
+.nav1 ul li a:hover{
+    transition-duration: 1s;
+    color: var(--additon);
+    border: solid 2px #a80830;
+    border-radius: 90px;
+    background-color: #990b2f;
+
+}
+.nav1 ul{
+    margin-left: 5.25rem;
+    border: solid 2px #ad3453;
+    padding: 5px 10px;
+    border-radius: 90px;
+}
+.nav1 ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.nav1 ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 15px;
+    border: solid 2px var(--primary);
+        border-radius: 90px;
+}
+aside a:hover{
+    background: transparent;
+    transition-duration: 1s;
+}
+/*image of shopping*/
+.pictures{
+    height: 90vh;
+    width: 100%;
+    background-color: #800020;
+    position: relative;
+display: flex;
+justify-content: center;
+    align-items: center;
+    margin-top: 3.125rem;
+}
+.pic{
+    min-height: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+background-position:center;
+background-size: cover;
+background-attachment: fixed;
+}
+.img1{
+    position:absolute;
+    /* background-color: #8d8d7c; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.486),rgba(128, 103, 103, 0.486)) ,url("../images/Web/b16f1c87b71591a279ca037d02bfe9be.jpg");
+}
+/* pictures words */
+.address{
+    color: var(--primary);
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-align: justify;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+animation: move 1s;
+}
+@keyframes move{
+    0%{
+        transform: translateX(100px);
+        
+    }
+    25%{
+        transform: translateX(100px);
+        
+    }
+}
+#Discover{
+    margin-left: 1px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+aside a{
+    display: inline-block;
+    text-decoration: none;
+    color: #f5f5dc;
+    background-color:var(--primary);
+   padding: 15px;
+   border: solid 3px var(--additon);
+}
+/* images of the new arrivals */
+#proimg{
+    min-height: 50vh;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+@media (max-width:829px)
+{
+    #proimg{
+    height: auto;
+    }
+}
+/* boxes */
+.box{
+  flex: 0 0 200px;
+}
+.firstBox{
+    height: 40vh;
+    width: 15%;
+    border: solid 5px var(--additon);
+    transition: all 1.5s ease;
+    border-radius: 2%;
+}
+.firstBox:hover{
+    flex-basis: 250px;
+}
+.secondBox{
+    /* flex: 0 0 2em; */
+    height: 40vh;
+    width: 15vw;
+    border: solid 5px var(--additon);
+    border-radius: 2%;
+    transform-origin: center;
+    transition: all 1.5s ease;
+    overflow: hidden;
+}
+.secondBox:hover{
+flex-basis: 250px;
+}
+.thirdBox{
+    height: 40vh;
+    width: 15vw;
+    border: solid 5px var(--additon);
+    transition: all 1.5s ease;
+    border-radius: 2%;
+}
+.thirdBox:hover{
+flex-basis: 250px;
+}
+.fourthBox{
+    height: 40vh;
+    width: 15vw;
+    border: solid 5px var(--additon);
+    transition: all 1.5s ease;
+    border-radius: 2%;
+}
+.fourthBox:hover{
+flex-basis: 250px;
+}
+.firstImg{
+    background-image: url("../images/Goods/jacket-women.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secondImg{
+    background-image: url("../images/Goods/jackets-fad3552e9c974578b74ffce1768b7ba0.jpg");
+height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.thirdImg{
+    background-image: url("../images/Goods/MollyJewelryUS-Emerald-Cut-Moissanite-Rose-Gold-Leaf-Engagement-Ring-Set-1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fourthImg{
+    background-image: url("../images/Goods/reserved-for-mark-princess-morganite-ring-diamond-prongs-hidden-halo-14k-rose-gold-8mm-926307_1200x\ \(1\).jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.custmor #textpa{
+    margin-top: 20px;
+    color: black;
+    font-size: 26px;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* tests */
+#review{
+    color: #ad3453;
+    font-weight: 600;
+}
+.texts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px ;
+   padding: 0 120px;
+}
+.text{
+    color: var(--secondary);
+    word-wrap: break-word;
+    padding: 20px;
+    background-color: rgb(139, 56, 56);
+    border-radius: 2%;
+    word-spacing: 5px;
+    transition: all 1s ease-in-out;
+    border: solid 3px; 
+}
+@media (max-width:1050px){
+        .texts{
+            /* padding: 0 0; */
+            grid-template-columns: repeat(2,1fr);
+            /* height: 100vh; */
+        }
+}
+@media (max-width:635px){
+        .texts{
+            /* padding: 0 0; */
+            grid-template-columns: repeat(1,1fr);
+            width: 80vw;
+            /* padding-left:120px; */
+            margin-left: 60px;
+            /* height: 100vh; */
+        }
+}
+@media (max-width:750px){
+    .texts{
+        padding: 0 20px;
+    }
+    .text img{
+        width: 23%;
+    }
+}
+.text:hover{
+background-color: var(--primary);
+box-shadow: #66031b;
+border: solid 3px var(--additon);
+scale: 1.09;
+color: var(--secondary);
+}
+.text img{
+    height: 10vh;
+    border-radius: 50%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+#cus1{
+    font-size: 16px;
+    margin-left: 7px;
+    font-weight: 600;
+}
+#cus11{
+    margin-left: 7px;
+    color: rgb(184, 172, 172);
+}
+#new{
+    margin-top: 5%;
+    align-items: center;
+ font-size: 50px;
+ margin-left: 20%;
+    
+}
+#ne img{
+    height: 60px;
+}
+#ne{
+        color: var(--primary);
+            position: absolute;
+            bottom: 1.9em;
+            left: 25em;
+            text-align: justify;
+            letter-spacing: 5px;
+            word-spacing: 2px;
+            animation: ne 1s;
+            transition: ease-out;
+            transition-duration: 1s;
+}
+@keyframes ne{
+    0%{
+    transform: translateX(500px);
+}
+50%{
+    
+    transform: translateX(250px);
+}
+
+    100%{
+        
+        transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+}
+.first{
+    font-size: 70px;
+    color: var(--primary);
+    text-decoration: underline;
+}
+#ne:hover{
+    transform: translateX(70px);
+}
+/* about us */
+.aboutnaimus{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary);
+        background: linear-gradient(110deg, #800020, #8d8d7c); 
+line-height: 2.0;
+z-index: 5;
+position: relative;
+    }
+#spe{
+    font-size: 20px;
+    color: var(--additon);
+    margin-top: 20px;
+    
+}
+.time{
+    letter-spacing: 7px;
+    color: var(--secondary);
+    margin-top: 35px;
+    animation: time 3.5s ease-in-out infinite;
+}
+@keyframes time{
+
+    25%{
+        color: #800020;
+        transition: all ease-in-out 1s;
+        
+        color: #800020;
+        transition: all ease-in-out 1s;
+    }
+    50%{
+
+
+    }
+    100%{
+
+    }
+}
+.change{
+    color: var(--black);
+}
+#elgence{
+    color: var(--secondary);
+        font-size: 25px;
+    letter-spacing: 7px;
+    margin-top: 20px;
+}
+#feel{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.naimusimg{
+    margin-top: 50px;
+background-image: linear-gradient(rgba(0, 0, 0, 0.123),rgba(0, 0, 0, 0.288)) ,url("../images/Web/AddonsPic/istockphoto-664420932-612x612.jpg");
+width: 25vw;
+height: 70vh;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+animation: naimove 2s ease-in-out infinite;
+}
+.naimusimg::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom:30px;
+    left:40px;
+    z-index: -3;
+    border: solid 10px black;
+    box-sizing: border-box;
+    transition: all ease 1s;
+}
+.naimusimg::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(106, 125, 141, 0.767);
+    bottom:10px;
+    left:20px;
+    z-index: -2;
+    transition: all ease 1s;
+}
+@media (max-width:680px)
+{
+    .naimusimg::after,.naimusimg::before{
+        /* display: none; */
+        left:unset;
+        left: 1px;
+        bottom: 1px;
+    }
+}
+.naimusimg:hover::after,.naimusimg:hover::before{
+    bottom: 0;
+    left:0;
+}
+.subscribe{
+    margin-top: 15px;
+
+}
+.subscribe a{
+    animation: time 3.5s ease-in-out infinite;
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 25px;
+    border: solid 3px var(--additon);
+    border-radius: 90px;
+    padding: 10px;
+    background-color: var(--primary);
+}
+.subscribe a:hover{
+    transition: all ease 1s;
+    background-color: var(--additon);
+    color: black;
+}
+footer{
+    background-color: var(--primary);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+}
+footer p{
+    text-align: center;
+    flex: 1;
+}
+.again a{
+    font-family: monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.again ul{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #66031b;
+    z-index: -1;
+}
+.again ul li{
+    padding: 10px;
+}
+footer ul li a:hover {
+    transition-duration: 1s;
+    color: var(--additon);
+    border-radius: 90px;
+    background-color: #990b2f;
+    transition: all 1s;
+
+}
+footer ul {
+    /* border: solid 2px #ad3453; */
+    padding: 5px 10px;
+    border-radius: 90px;
+}
